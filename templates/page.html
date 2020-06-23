@@ -11,6 +11,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-grid.css') }}" />
 
     <style type="text/css">
+      #vocprez {
+          position: fixed;
+          top: 280px;
+          left: -50px;
+          font-size: small;
+          transform: rotate(-90deg);
+          color: grey;
+      }
+      #vocprez a {
+          font-size: 2em;
+          font-weight: bold;
+          text-decoration: none;
+          color: #4294B0;
+      }
+      #vocprez a:hover {
+          text-decoration: underline;
+      }
+
+      #vocprez a#versionlink {
+          font-size: 1em;
+      }
+
       /*
       * Pagination
       */
@@ -125,6 +147,11 @@
     <link rel="shortcut icon" type="image/png" href="https://static.qgov.net.au/assets/v2/images/skin/favicon.ico">
 </head>
 <body>
+    <div id="vocprez">
+      made by <a href="http://github.com/rdflib/VocPrez">VocPrez</a>&nbsp;
+      <a id="versionlink" href="https://github.com/RDFLib/VocPrez/releases/tag/{{ utils.version() }}">{{ utils.version() }}</a>
+    </div>
+
     <header>
       <div class="container" style="display:grid; grid-template-columns:1fr 3fr 1fr;">
         <div class="branding" style="grid-column: 2;">
