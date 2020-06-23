@@ -1,0 +1,15 @@
+{% extends "page.html" %}
+
+{% block content %}
+<h1>GSQ's Vocabulary System</h1>
+
+<p>Welcome to the <a href="https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq">Geological Survey of Queensland (GSQ)</a>'s instance of VocPrez, a read-only web delivery system for Simple Knowledge Organization System (SKOS)-formulated RDF vocabularies.</p>
+
+<p>VocPrez presents different views, or <em>profiles</em>, of vocabularies which, in this system's case, it gets from GSQ's graph database of vocabularies and other <a href="https://www.w3.org/standards/semanticweb/">Semantic Web</a> content.</p>
+
+<p>See the <a href="{{ url_for('about') }}">About page</a> for more information about this system.</p>
+
+<h2>Vocabularies</h2>
+<p>See the <a href="{{ url_for('vocabularies') }}">list of Vocabularies</a>.</p>
+
+{% endblock %}
