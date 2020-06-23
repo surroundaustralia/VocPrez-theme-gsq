@@ -10,6 +10,16 @@
 <p>See the <a href="{{ url_for('about') }}">About page</a> for more information about this system.</p>
 
 <h2>Vocabularies</h2>
-<p>See the <a href="{{ url_for('vocabularies') }}">list of Vocabularies</a>.</p>
+<p>See this system's <a href="{{ url_for('vocabularies') }}">list of Vocabularies</a>.</p>
+<p>Note that GSQ's vocabularies are also available as text files from their point-of-truth code repository:</p>
+<ul>
+  <li><a href="https://github.com/geological-survey-of-queensland/vocabularies/">GSQ's vocabulary source files on GitHub</a></li>
+</ul>
+<p>The vocabularies listed there are automatically loaded into this system</p>
+<h3>Vocabulary profile</h3>
+<p>All of GSQ's vocabularies are managed by testing their conformance to a profile of SKOS issued by <a href="https://www.ga.gov.au">Geosceince Australia</a>. This profile is documented and available for others to use:</p>
+<ul>
+  <li><a href="https://linked.data.gov.au/def/ga-skos">GA's SKOS Profile</a></li>
+</ul>
 
 {% endblock %}
