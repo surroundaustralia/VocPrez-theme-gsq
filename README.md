@@ -1,8 +1,9 @@
 # VocPrez-theme-gsq
 A VocPrez UI theme for the [Geological Survey of Queensland](https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq).
 
-### Applying the theming
-`apply.py` adds these elements - templates, style files and endpoints additions - to a VocPrez instance. The only variable that needs setting is `VOCPREZ_HOME` at line 20, in `apply.py`.
+`apply.sh` adds these elements - templates, style files - to a VocPrez instance
 
-### Install log
-`install.log` records informally, not using a build too, the installation steps for VocPrez. Note that there are variations on this procedure that are simpler for automated build, such as using Docker as per [VocPrez' Docker instructions](https://github.com/RDFLib/VocPrez/#running-in-docker).
+The only config needed is to set the following environment variables before using `apply.sh`:
+
+* `$VP_THEME_HOME` - installation dir of this theme, no trailing slash
+* `$VP_HOME` - installation dir of VocPrez, no trailing slash
