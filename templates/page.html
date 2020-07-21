@@ -32,6 +32,128 @@
           font-size: 1em;
       }
 
+      .content {
+          margin-bottom: 40px;
+          padding: 40px;
+          box-shadow: 0 0 10px rgba(53, 52, 53, 0.1);
+          border: 1px solid rgba(53, 52, 53, 0.1);
+          border-radius: 2px;
+          background: white;
+      }
+
+      h1 {
+          margin-bottom: 26px;
+          padding-bottom: 5px;
+          font-size: 40px;
+          line-height: 42px;
+          font-weight: 700;
+          border-bottom: 2px solid #f0f0f0;
+      }
+
+      h2 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 45px;
+      }
+
+      h3 {
+          margin: 20px 0 10px;
+          font-size: 20px;
+          font-weight: 700;
+      }
+
+      h4 {
+          margin: 20px 0 10px;
+          font-size: 20px;
+          font-weight: 700;
+      }
+
+      p, ul, td, th {
+          font-family: "Heebo", sans-serif;
+      }
+
+      p {
+          margin-bottom:1em;
+      }
+      th {
+          padding-right: 10px;
+          font-weight: bold;
+      }
+
+      a {
+          color: #4294B0;
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      ul {
+          list-style-position: inside;
+          list-style-type: disc;
+      }
+      ul > li {
+          margin-left: 25px;
+      }
+
+
+      hr {
+          margin-top: 1px;
+          margin-bottom: 1px;
+      }
+
+      .collapsible {
+          font-weight: normal;
+          color: #4294B0;
+          text-decoration: underline;
+          cursor: pointer;
+      }
+
+      .collapsible-content {
+          display: none;
+          overflow: hidden;
+          background-color: #f1f1f1;
+      }
+
+      .overflow {
+          overflow: auto;
+          min-height: 28px;
+      }
+
+      body {
+          text-align: left;
+      }
+
+      .content-footer {
+          margin-top: 40px;
+          border-top: 2px solid #f0f0f0;
+      }
+
+      dt {
+          font-weight: bold;
+      }
+
+      dd {
+          margin-left: 20px;
+      }
+
+      table.concept {
+          margin-top:20px;
+      }
+
+      table.concept th {
+          min-width: 15%;
+      }
+
+      #nav-links a {
+          margin-right: 20px;
+      }
+
+      .pagination ul li {
+          border-width: 0;
+      }
+      
       /*
       * Pagination
       */
@@ -141,6 +263,27 @@
           overflow: hidden;
           background-color: #f1f1f1;
       }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 250px;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        border:solid 1px black;
+        background-color: lightgrey;
+        font-weight: normal;
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }      
     </style>
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,700" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="https://static.qgov.net.au/assets/v2/images/skin/favicon.ico">
