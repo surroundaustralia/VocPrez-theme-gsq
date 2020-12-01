@@ -9,3 +9,6 @@ _config/
 
 # Python Virtual Environment
 venv/
+
+# environment variables
+.ENV
