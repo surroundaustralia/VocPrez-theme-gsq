@@ -50,7 +50,7 @@ DATA_SOURCES = {
 
 # Details for the main vocabulary list. Can be overridden in the vocabularies.html template
 # BEGIN Vocabs list info
-VOCS_URI = "https://vocabs.gsq.digital/vocab/"
+VOCS_URI = "https://vocabs.gsq.digital/vocabulary/"
 VOCS_TITLE = "GSQ Vocabularies"
 VOCS_DESC = "Vocabularies managed by the Geological Survey of Queensland"
 # END Vocabs list info

@@ -25,4 +25,11 @@ fi
 echo "Move $VP_THEME_HOME/config.py to $VP_HOME/vocprez/_config/__init__.py"
 mv $VP_THEME_HOME/config_updated.py $VP_HOME/vocprez/_config/__init__.py
 
+echo "adding /vocabulary/ endpoint to app.py"
+if `grep -q "@app.route(\"/vocabulary/\")" "$VP_HOME/vocprez/app.py"`; then
+    echo "already there"
+else
+    sed -i 's#/vocab/#/vocabulary/#' $VP_HOME/vocprez/app.py
+fi
+
 echo "customisation done"
