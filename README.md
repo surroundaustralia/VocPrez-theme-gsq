@@ -7,3 +7,4 @@ The only config needed is to set the following environment variables before usin
 
 * `$VP_THEME_HOME` - installation dir of this theme, no trailing slash
 * `$VP_HOME` - installation dir of VocPrez, no trailing slash
+* `$SPARQL_ENDPOINT` - the underlying SPARL endpoint used by VocPrez to query for vocabularies
