@@ -1741,3 +1741,14 @@ footer .copyright {
   font-weight: normal;
   line-height: 16px; }
 
+input#search,
+select#from {
+  min-width: 270px;
+}
+label[for=voc] {
+  font-style: italic;
+}
+label[for=voc]:after {
+    content: "\a";
+    white-space: pre;
+}
