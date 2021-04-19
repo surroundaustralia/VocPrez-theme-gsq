@@ -1,10 +1,10 @@
-eval $(cat .ENV | tr -d '\r')
-# copy all style content to VP
-echo "copying $VP_THEME_HOME/style content to $VP_HOME/vocprez/view/style"
+#mkdir $VP_HOME/deploy
+#cp -r $VP_HOME/vocprez/* $VP_HOME/deploy
+
+echo "copy all style content to VP"
 cp $VP_THEME_HOME/style/* $VP_HOME/vocprez/view/style
 
-# copy all templates to VP
-echo "copying $VP_THEME_HOME/templates content to $VP_HOME/vocprez/view/templates"
+echo "copy all templates to VP"
 cp $VP_THEME_HOME/templates/* $VP_HOME/vocprez/view/templates
 
 echo "Config"

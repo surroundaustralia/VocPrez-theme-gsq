@@ -12,3 +12,4 @@ venv/
 
 # environment variables
 .ENV
+*.env

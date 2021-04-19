@@ -17,9 +17,13 @@
 </ul>
 <p>The vocabularies listed there are automatically loaded into this system</p>
 <h3>Vocabulary profile</h3>
-<p>All of GSQ's vocabularies are managed by testing their conformance to a profile of SKOS issued by <a href="https://www.ga.gov.au">Geosceince Australia</a>. This profile is documented and available for others to use:</p>
-<ul>
-  <li><a href="https://linked.data.gov.au/def/ga-skos">GA's SKOS Profile</a></li>
-</ul>
+<p>All of GSQ's vocabularies are managed by testing their conformance to a profile of SKOS, the so-called <a href="https://w3id.orf/profile/vocpub">VocPub Profile</a>.</p>
+<p>This profile sets requirements for basic annotations of elements of SKOS, for example, ensuring that all <code>Concept</code> instances have labels and are placed within the <code>ConceptScheme</code>'s concept hierarchy.</p>
+<p>This profile has all of its requirements documented in a <em><a href="https://w3id.orf/profile/vocpub/spec">Specification Document</a></em> and also provides a <em><a href="https://w3id.orf/profile/vocpub/validator">constraints language validator</a></em> to assist vocabulary publishers in getting their vocabularies conformant with it.</p>
 
+{% include 'alt_link.html' %}
+
+<h2>All-vocabulary dataset</h2>
+<p>To access metadata for GSQ's total set of vocabularies as a single dataset, follow the <em>Alternate Profiles</em> link to the right. The dataset view of these vocabularies allows GSQ's total holdings to be referred to and represented in other catalogues.</p>
+<p>This system provides <em>Alternate Profiles</em> links on all pages - list of vocabularies, individual vocabularies, Concepts within a vocabulary - as each of these items have different information and formats available.</p>
 {% endblock %}
