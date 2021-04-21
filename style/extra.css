@@ -153,14 +153,20 @@
         float: right;
         width: 250px;
         clear: right;
+        margin-left: 20px;
     }
 
     .filter {
         float: right;
         width: 250px;
         clear: right;
+        margin-left: 20px;
     }
 
+    .alt th,
+    .alt td {
+        padding: 5px;
+    }
     .alt tr:nth-child(odd){
         background: #eee;
     }
