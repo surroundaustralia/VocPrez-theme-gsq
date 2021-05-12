@@ -29,7 +29,7 @@ class VocabSource:
 
 
 # BEGIN Instance Vars
-SYSTEM_URI_BASE = "http://localhost:{}".format(PORT)
+SYSTEM_URI_BASE = "$SYSTEM_BASE_URI"
 USE_SYSTEM_URIS = True
 DEBUG = True
 SPARQL_ENDPOINT = "$SPARQL_ENDPOINT"

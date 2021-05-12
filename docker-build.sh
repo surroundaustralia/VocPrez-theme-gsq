@@ -28,6 +28,7 @@ if `grep -q "@app.route(\"/vocabulary/\")" "$VP_HOME/deploy/app.py"`; then
     echo "already there"
 else
     sed -i 's#@app.route("/vocab/")#@app.route("/vocab/")\n@app.route("/vocabulary/")#' $VP_HOME/deploy/app.py
+    sed -i 's#@app.route("/vocab/<string:vocab_id>/")#@app.route("/vocab/<string:vocab_id>/")\n@app.route("/vocabulary/<string:vocab_id>/")#' $VP_HOME/deploy/app.py
 fi
 
 echo "run Dockerfile there"
