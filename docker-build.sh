@@ -1,3 +1,5 @@
+eval $(cat .env | tr -d '\r')
+
 echo "prepare a deployment folder"
 mkdir $VP_HOME/deploy
 cp -r $VP_HOME/vocprez/* $VP_HOME/deploy
